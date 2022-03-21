@@ -12,7 +12,7 @@ valid_selections = ["rock", "paper", "scissors"] # only have to update in one pl
 
 u = input("Please choose one of 'Rock', 'Paper', or 'Scissors': ").lower()
 print("USER CHOICE:", u)
-if u not in ["rock", "paper", "scissors",  "hoya"]:
+if u not in valid_selections:
     print("OOPS, TRY AGAIN")
     exit()
 

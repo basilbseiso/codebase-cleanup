@@ -20,7 +20,7 @@ if u not in valid_selections:
 # COMPUTER SELECTION
 #
 
-c = choice(["rock", "paper", "scissors"])
+c = choice(valid_selections)
 print("COMPUTER CHOICE:", c)
 
 #

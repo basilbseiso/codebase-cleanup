@@ -11,3 +11,12 @@ def to_usd(my_price):
     Invoke like this: to_usd(9.9999)
     """
     return '${:,.2f}'.format(my_price)
+
+
+
+
+
+
+price = input("Please choose a price like 4.9999")
+
+print(to_usd(float(price)))

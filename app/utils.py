@@ -9,6 +9,8 @@ def to_usd(my_price):
     Example of invoking the function.
 
     Invoke like this: to_usd(9.9999)
+   
+    Example return value "9.99"
     """
     return '${:,.2f}'.format(my_price)
 

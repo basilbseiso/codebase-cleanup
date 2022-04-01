@@ -8,6 +8,14 @@ from random import choice
 
 def determine_winner(user_choice, computer_choice):
     #return "paper"
+    """
+    This function determines the winner of the rock, paper, scissors game.
+    The parameters are the user choice and the computer choice.
+    The parameters are strings.
+    The function will return the winning choice.
+    The winning choice will be compared to the parameters to determine the winner.
+    Invoke like this: determine_winner(“rock”, “scissors”)
+    """
     winners = {
         "rock": {
             "rock": None,

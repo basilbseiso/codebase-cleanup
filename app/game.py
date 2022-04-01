@@ -1,6 +1,10 @@
 
+
+
+
 from random import choice
 
+<<<<<<< Updated upstream
 #
 # USER SELECTION
 #
@@ -42,6 +46,7 @@ elif u == "scissors" and c == "paper":
     print("The user wins")
 elif u == "scissors" and c == "scissors":
     print("It's a tie!")
+=======
 
 
 def determine_winner(user_choice, computer_choice):
@@ -136,3 +141,4 @@ if __name__ == "__main__":
         print("COMPUTER WON")
     else:
         print("TIE")
+>>>>>>> Stashed changes

@@ -12,7 +12,8 @@ from app.utils import to_usd
 
 
 
-
+#def csv_filepath(filename):
+#    return os.path.join(os.path.dirname(__file__), "..", "data", filename.csv)
 
 
 

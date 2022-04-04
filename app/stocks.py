@@ -10,7 +10,7 @@ load_dotenv()
 
 #ALPHAVANTAGE_API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", default="demo")
 
-symbol = input("Please input a crypto symbol (default: 'NFLX'): ") or "NFLX"
+symbol = input("Please input a stock symbol (default: 'NFLX'): ") or "NFLX"
 
 fetch_stocks_data(symbol)
 

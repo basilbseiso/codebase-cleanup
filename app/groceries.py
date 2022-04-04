@@ -50,7 +50,7 @@ for p in products:
     print("..." + p["name"] + "   " + to_usd(p["price"]))
 
 import statistics
-avg_price = statistics.median(all_prices)
+avg_price = statistics.mean(all_prices)
 
 print("---------")
 print("AVERAGE PRICE:", to_usd(avg_price))

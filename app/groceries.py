@@ -20,7 +20,7 @@ default_products_filepath = os.path.join(os.path.dirname(__file__), "..", "data"
 
 
 # checks to see if a products.csv file exists. If not, it uses the default
-if products_filepath == True:
+if os.path.isfile(os.path.join(os.path.dirname(__file__), "..", "data", "products.csv")) == True:
     print("USING CUSTOM PRODUCTS CSV FILE...")
     csv_filepath = products_filepath
 else:

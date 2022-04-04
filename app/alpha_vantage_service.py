@@ -9,6 +9,8 @@ from dotenv import load_dotenv
 import requests
 from pandas import read_csv
 from app.utils import to_usd
+from pandas import DataFrame
+from plotly.express import bar
 
 load_dotenv()
 
@@ -57,3 +59,22 @@ def fetch_unemployment_data():
     data = parsed_response["data"]
     latest = data[0]
     print(latest) #> {'date': '2022-02-01', 'value': '3.8'}
+    df = DataFrame(data)
+    fig = bar(df, x="date", y="value", title="Unemployment Rates")
+    fig.update_yaxes(
+    tickprefix="$",
+    ticksuffix="%",
+    showgrid=True
+    )
+
+    fig.show()
+
+    print("DATAVIZ EXPORT...")
+
+    img_filepath = os.path.join(os.path.dirname(__file__), "..", "reports", "unemployment.png")
+    fig.write_image(img_filepath)
+
+
+    print("CSV EXPORT...")
+    csv_filepath = os.path.join(os.path.dirname(__file__), "..", "reports", "unemployment.csv")
+    df.to_csv(csv_filepath, index=False)

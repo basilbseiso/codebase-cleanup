@@ -69,7 +69,6 @@ Run the crypto report:
 #python app/crypto.py
 python -m app.crypto
 ```
-```
 
 Run the unemployment report:
 

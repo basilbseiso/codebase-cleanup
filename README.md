@@ -76,3 +76,11 @@ Run the unemployment report:
 #python app/unemployment.py
 python -m app.unemployment
 ```
+
+## Usage
+
+Run a test:
+
+```sh
+pytest
+```
